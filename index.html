@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071326">
+  <title>Misión Luna · Un viaje de 5.º de Primaria</title>
+  <style>
+    :root{--ink:#f4f7ff;--muted:#b5c2dc;--navy:#071326;--panel:#112442;--line:#355276;--cyan:#86e9ef;--violet:#baacff;--yellow:#ffe49b;--green:#aaf0ba;--red:#ffb1ad}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 4%,#263768 0,transparent 32%),radial-gradient(ellipse at 10% 45%,#142d4c 0,transparent 34%),var(--navy);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.45;background-image:radial-gradient(#fff 1px,transparent 1px),radial-gradient(#b4d9ff 1px,transparent 1px);background-size:89px 89px,137px 137px;background-position:13px 22px,61px 93px;z-index:-1}a{color:var(--cyan)}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.skip{position:absolute;left:-9999px;top:12px;background:#fff;color:#071326;padding:10px;z-index:100}.skip:focus{left:12px}.topbar{position:sticky;top:0;z-index:20;background:#071326e8;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff20}.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}.brand{color:#fff;text-decoration:none;font-weight:900;letter-spacing:.12em;font-size:.9rem}.brand span{color:var(--cyan)}.nav{display:flex;gap:12px;flex-wrap:wrap}.nav a{font-size:.85rem;text-decoration:none;color:var(--muted);padding:8px}.nav a:hover{color:#fff}.hero{min-height:640px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:20px;padding:54px 0 60px}.eyebrow{text-transform:uppercase;letter-spacing:.2em;color:var(--cyan);font-weight:800;font-size:.78rem}.hero h1{font-size:clamp(3.7rem,9vw,7.8rem);line-height:.88;letter-spacing:-.08em;margin:18px 0 24px}.hero h1 span{display:block;color:var(--yellow)}.lead{font-size:clamp(1.1rem,2vw,1.4rem);max-width:520px;color:#d8e3f8}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:999px;border:1px solid var(--cyan);background:var(--cyan);color:#092035;font-weight:850;text-decoration:none}.btn.secondary{background:transparent;color:var(--ink);border-color:#7891b5}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.moon-scene{position:relative;display:grid;place-items:center;min-height:470px}.moon-orbit{position:absolute;width:min(100%,490px);aspect-ratio:1;border:1px dashed #83b9ee55;border-radius:50%;transform:rotate(-23deg)}.big-moon{width:min(82%,390px);aspect-ratio:1;border-radius:50%;position:relative;overflow:hidden;background:radial-gradient(circle at 30% 27%,#fffdf3 0,#eee7d6 26%,#bfc5cf 67%,#7989a1 100%);box-shadow:0 0 45px #dbe9ff70,0 0 125px #adc7ff4d,inset -31px -18px 45px #293c5d7d;animation:float 7s ease-in-out infinite}.crater{position:absolute;border-radius:50%;background:#a3afbd55;box-shadow:inset 5px 5px 11px #78839485,3px 3px 9px #fff8}.c1{width:21%;height:20%;left:23%;top:24%}.c2{width:12%;height:13%;right:17%;top:35%}.c3{width:16%;height:17%;left:44%;bottom:19%}.c4{width:8%;height:9%;left:15%;bottom:24%}.c5{width:9%;height:9%;right:33%;top:13%}.orbit-label{position:absolute;right:3%;bottom:7%;background:#172b4f;border:1px solid #728dbb;border-radius:12px;padding:8px 13px;color:var(--cyan);font-weight:800}.section{padding:76px 0;scroll-margin-top:70px}.section-heading{max-width:750px;margin-bottom:29px}.section h2{font-size:clamp(2.1rem,5vw,3.5rem);line-height:1.08;letter-spacing:-.05em;margin:8px 0 12px}.section-heading p{color:var(--muted);font-size:1.1rem}.panel{background:linear-gradient(135deg,#172b4dbb,#10213dcc);border:1px solid #91b5e647;border-radius:24px;box-shadow:0 15px 40px #02081733}.mission-map{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.mission-link{text-decoration:none;color:var(--ink);padding:23px;min-height:164px;transition:transform .2s,border-color .2s}.mission-link:hover{transform:translateY(-5px);border-color:var(--cyan)}.mission-link .icon{font-size:2.1rem}.mission-link strong{display:block;font-size:1.15rem;margin-top:13px}.mission-link small{color:var(--muted)}.fact-layout{display:grid;grid-template-columns:1fr 1fr;gap:22px}.earth-moon{min-height:350px;position:relative;display:flex;align-items:center;justify-content:space-around;overflow:hidden}.earth{width:185px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 30% 25%,#8ceaff,#3074c7 44%,#113b7a 75%);box-shadow:0 0 40px #5aabed70,inset -25px -18px 35px #0b2049}.earth:after{content:"";display:block;width:75%;height:70%;margin:13% 0 0 6%;border-radius:60% 23% 45% 35%;background:#5ac89b;transform:rotate(25deg);opacity:.8;clip-path:polygon(0 10%,60% 0,91% 28%,64% 47%,100% 85%,49% 79%,29% 100%,0 68%)}.mini-moon{width:55px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,#b5bfd0 75%,#77859c);box-shadow:0 0 20px #d4e6ff80}.distance-line{position:absolute;top:16%;left:30%;right:14%;border-top:2px dashed var(--cyan);text-align:center;color:var(--cyan);font-weight:800;padding-top:8px}.fact-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.fact{padding:21px}.fact b{display:block;font-size:1.9rem;color:var(--yellow);line-height:1.2}.fact span{color:var(--muted);font-size:.92rem}.note{color:var(--muted);font-size:.9rem}.phase-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}.phase-stage{min-height:365px;display:grid;place-content:center;text-align:center;padding:28px}.phase-symbol{font-size:clamp(7rem,20vw,11rem);line-height:1;filter:drop-shadow(0 0 25px #cbd9ff75)}.phase-stage h3{font-size:1.8rem;margin:15px 0 4px}.phase-stage p{color:var(--muted);max-width:350px;margin:0 auto}.phase-controls{display:grid;gap:10px}.phase-btn{background:#112440;border:1px solid #4b668c;border-radius:16px;color:#fff;padding:15px 18px;text-align:left;display:flex;align-items:center;gap:15px}.phase-btn span{font-size:2rem;line-height:1}.phase-btn:hover,.phase-btn[aria-pressed=true]{border-color:var(--cyan);background:#1c3b5f}.phase-explain{margin-top:18px;color:var(--muted)}.curiosity-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.flip{min-height:190px;border:1px solid #728dbb66;background:linear-gradient(135deg,#172d50,#10233d);border-radius:22px;color:#fff;text-align:left;padding:22px;display:flex;flex-direction:column;justify-content:space-between}.flip:hover{border-color:var(--violet);transform:translateY(-3px)}.flip .glyph{font-size:2rem}.flip strong{font-size:1.15rem;line-height:1.25}.flip .reveal{color:var(--cyan);font-size:.9rem}.flip[data-open=true]{background:linear-gradient(135deg,#304478,#182e50)}.calculator{display:grid;grid-template-columns:1fr 1fr;gap:25px;padding:32px}.calculator h3{font-size:1.6rem;margin:0 0 8px}.calculator label{display:block;margin:18px 0 8px;font-weight:800}.calculator input{width:100%;max-width:280px;border:1px solid #7b99c5;border-radius:12px;background:#061629;color:#fff;padding:13px 15px;font-size:1.2rem}.result{display:grid;align-content:center;background:#0a1b34;border-radius:18px;padding:25px}.result strong{font-size:clamp(2rem,5vw,3.5rem);color:var(--yellow);line-height:1.1}.result small{color:var(--muted)}.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.event{padding:24px;border-top:3px solid var(--cyan)}.event b{font-size:1.55rem;color:var(--yellow)}.event h3{margin:8px 0}.event p{color:var(--muted);margin-bottom:0}.quiz-box{padding:clamp(20px,4vw,38px);max-width:800px}.progress{font-weight:800;color:var(--cyan);letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}.quiz-box h3{font-size:clamp(1.4rem,3vw,2rem);line-height:1.2}.answers{display:grid;gap:10px}.answer{padding:14px 18px;border:1px solid #617da5;border-radius:13px;background:#0d203e;color:#fff;text-align:left}.answer:hover:not(:disabled){border-color:var(--cyan);background:#18365a}.answer.correct{border-color:var(--green);background:#184c41}.answer.incorrect{border-color:var(--red);background:#57313c}.feedback{min-height:34px;font-weight:700;margin:16px 0}.quiz-next{margin-top:4px}.footer{border-top:1px solid #ffffff26;padding:34px 0 50px;color:var(--muted);font-size:.9rem}.footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer a{margin-right:16px}.print-only{display:none}@keyframes float{50%{transform:translateY(-12px)}}@media(max-width:800px){.hero{grid-template-columns:1fr;min-height:0}.moon-scene{min-height:340px;order:-1}.big-moon{width:260px}.mission-map,.curiosity-grid{grid-template-columns:repeat(2,1fr)}.fact-layout,.phase-layout,.calculator{grid-template-columns:1fr}.nav{gap:0}.nav a{font-size:.75rem;padding:6px}}@media(max-width:520px){.topbar .wrap{align-items:flex-start;padding:10px 0;flex-direction:column}.hero{padding-top:30px}.moon-scene{min-height:290px}.big-moon{width:220px}.mission-map,.curiosity-grid,.timeline{grid-template-columns:1fr}.mission-link{min-height:125px}.fact-grid{grid-template-columns:1fr 1fr}.fact b{font-size:1.45rem}.earth{width:135px}.section{padding:52px 0;scroll-margin-top:115px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.big-moon{animation:none}*{transition:none!important}}@media print{body{background:#fff;color:#111}body:before,.topbar,.actions,.phase-controls,.quiz-box,.calculator,.footer{display:none}.section{padding:18px 0}.panel,.flip{background:#fff;color:#111;border:1px solid #aaa;box-shadow:none}.mission-map,.curiosity-grid,.timeline{grid-template-columns:repeat(2,1fr)}.flip{min-height:0}.flip .reveal{color:#111}.print-only{display:block}.section-heading p,.note,.event p{color:#333}}
+    [hidden]{display:none!important}.author{display:inline-flex;gap:9px;align-items:center;flex-wrap:wrap;margin:4px 0 0;color:#e8f2ff;font-weight:800}.author span{color:var(--cyan)}.discovery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.discovery{padding:24px}.discovery .glyph{font-size:2rem}.discovery h3{font-size:1.25rem;margin:12px 0 8px}.discovery p{color:var(--muted);margin:0}.footer-identity{display:grid;gap:18px}.footer-logo{display:block;width:min(100%,420px);height:auto;filter:brightness(0) invert(1)}.footer-title{display:grid;gap:3px}.footer-title span{color:var(--muted)}.footer-sources{max-width:390px}.footer-sources a{display:inline-block;margin-top:7px}@media(max-width:800px){.discovery-grid{grid-template-columns:1fr}}@media print{.footer-logo{filter:none}}
+    /* Presentación a pantalla completa */
+    html,body{height:100%;overflow:hidden}
+    body{min-height:100dvh;display:grid;grid-template-rows:auto minmax(0,1fr) auto}
+    .topbar{position:relative}
+    .topbar .wrap{min-height:58px}
+    .deck{min-height:0;overflow:hidden;position:relative}
+    .deck > :not(.active){display:none!important}
+    .deck > .active{height:100%;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;scroll-behavior:auto}
+    .deck > .active::-webkit-scrollbar{display:none}
+    .deck > .hero.active{min-height:0;display:grid;align-content:center;padding-top:24px;padding-bottom:24px}
+    .deck > .section.active{padding-top:clamp(26px,5vh,54px);padding-bottom:clamp(26px,5vh,54px)}
+    .deck > .footer.active{width:100%;display:flex;flex-direction:column;justify-content:center;padding:32px max(18px,calc((100% - 1120px)/2));border-top:0}
+    .deck > .footer .wrap{width:100%;margin:0 auto}
+    .end-title{max-width:700px;margin:0 0 42px}
+    .end-title h2{font-size:clamp(2.5rem,7vw,5rem);line-height:1.02;letter-spacing:-.06em;margin:10px 0}
+    .end-title p{color:var(--muted);font-size:1.1rem}
+    .presentation-controls{background:#071326eb;border-top:1px solid #ffffff28;backdrop-filter:blur(12px);padding:10px max(18px,calc((100% - 1120px)/2));display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:16px;min-height:70px}
+    .slide-control{border:1px solid #6985ac;background:#122644;color:var(--ink);padding:9px 16px;border-radius:999px;font-weight:800;white-space:nowrap}
+    .slide-control:hover:not(:disabled){border-color:var(--cyan);background:#1b3a5d}
+    .slide-control:disabled{opacity:.38;cursor:default}
+    .slide-progress{min-width:0;text-align:center}
+    .slide-count{display:block;color:var(--muted);font-size:.78rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .slide-dots{display:flex;gap:6px;justify-content:center;align-items:center;margin-top:6px}
+    .slide-dot{width:7px;height:7px;padding:0;border:0;border-radius:99px;background:#5d7396}
+    .slide-dot[aria-current="step"]{width:24px;background:var(--cyan)}
+    .presentation-hint{position:absolute;bottom:12px;right:18px;color:#b5c2dc;font-size:.76rem}
+    @keyframes slide-in{from{opacity:.5;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    .deck > .active{animation:slide-in .28s ease-out}
+    @media(max-width:800px){.topbar .wrap{flex-direction:row;align-items:center;padding:0}.topbar .nav{display:none}.moon-scene{min-height:270px}.big-moon{width:220px}.deck > .hero.active{grid-template-columns:minmax(0,1fr);gap:4px}.hero h1{font-size:clamp(3.4rem,14vw,5.5rem)}.presentation-hint{display:none}}
+    @media(max-width:520px){.topbar .wrap{min-height:54px}.moon-scene{min-height:220px}.big-moon{width:180px}.moon-orbit{width:250px}.orbit-label{font-size:.75rem;bottom:0}.deck > .hero.active{padding-top:12px;padding-bottom:12px}.hero h1{margin:10px 0 12px}.lead{font-size:1.03rem}.actions{margin-top:14px}.section h2{font-size:clamp(1.9rem,8vw,2.6rem)}.section-heading{margin-bottom:18px}.section-heading p{font-size:1rem}.presentation-controls{gap:8px;min-height:64px}.slide-control{font-size:.85rem;padding:8px 10px}.slide-dots{gap:4px}.slide-dot{width:5px;height:5px}.slide-dot[aria-current="step"]{width:15px}.mission-map{grid-template-columns:1fr 1fr}.mission-link{padding:15px;min-height:132px}.mission-link strong{font-size:1rem}.mission-link small{font-size:.78rem}}
+    @media(max-height:650px) and (min-width:801px){.deck > .hero.active{padding-top:10px;padding-bottom:10px}.big-moon{width:260px}.moon-scene{min-height:300px}.hero h1{font-size:5.8rem}.section{padding:22px 0}}
+    .deck h1:focus,.deck h2:focus{outline:none}
+    @media(max-width:520px) and (max-height:700px){.deck > .hero.active{position:relative;display:block;padding-top:30px}.deck > .hero .moon-scene{position:absolute;right:0;top:10px;width:140px;height:140px;min-height:0;opacity:.38;pointer-events:none}.deck > .hero .big-moon{width:125px}.deck > .hero .moon-orbit,.deck > .hero .orbit-label{display:none}.hero h1{font-size:clamp(3.2rem,15vw,4.2rem)}.hero .lead{max-width:310px}.hero .actions{gap:8px}.hero .btn{padding:10px 14px}}
+    @media(prefers-reduced-motion:reduce){.deck > .active{animation:none}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="topbar"><div class="wrap"><a class="brand" href="#inicio">MISIÓN <span>LUNA</span> ✦</a><nav class="nav" aria-label="Navegación principal"><a href="#datos">Datos</a><a href="#fases">Fases</a><a href="#curiosidades">Curiosidades</a><a href="#calculadora">Gravedad</a><a href="#quiz">Quiz</a></nav></div></header>
+  <main id="contenido" class="deck">
+
+    <section id="inicio" class="wrap hero active" aria-labelledby="titulo"><div><div class="eyebrow">Cuaderno de exploración · 5.º de Primaria</div><h1 id="titulo">MISIÓN <span>LUNA</span></h1><p class="lead">Un viaje interactivo para descubrir los secretos de nuestra vecina en el espacio. ¿Preparado para despegar?</p><p class="author">Antonio De Oña Vidao <span>· 5.º A</span></p><div class="actions"><a class="btn" href="#despegue">Comenzar misión <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#quiz">Ir al reto final</a></div></div><div class="moon-scene" role="img" aria-label="Ilustración de la Luna con cráteres"><div class="moon-orbit"></div><div class="big-moon"><i class="crater c1"></i><i class="crater c2"></i><i class="crater c3"></i><i class="crater c4"></i><i class="crater c5"></i></div><div class="orbit-label">Destino: 384.400 km</div></div></section>
+    <section id="despegue" class="section wrap"><div class="section-heading"><div class="eyebrow">01 / Elige tu ruta</div><h2>Prepárate para el despegue</h2><p>Puedes seguir el recorrido en orden o explorar el tema que más te interese.</p></div><div class="mission-map"><a class="mission-link panel" href="#datos"><span class="icon" aria-hidden="true">🌍</span><strong>Conoce la Luna</strong><small>Tamaño, distancia y movimiento</small></a><a class="mission-link panel" href="#fases"><span class="icon" aria-hidden="true">🌗</span><strong>Explora sus fases</strong><small>Descubre por qué cambia</small></a><a class="mission-link panel" href="#curiosidades"><span class="icon" aria-hidden="true">✨</span><strong>Abre las pistas</strong><small>Datos que sorprenden</small></a><a class="mission-link panel" href="#quiz"><span class="icon" aria-hidden="true">🚀</span><strong>Supera el reto</strong><small>Cinco preguntas finales</small></a></div></section>
+    <section id="datos" class="section wrap"><div class="section-heading"><div class="eyebrow">02 / Nuestra vecina</div><h2>¿Qué es la Luna?</h2><p>Es el único satélite natural de la Tierra. Parece que brilla, pero en realidad refleja la luz del Sol.</p></div><div class="fact-layout"><div class="panel earth-moon" role="img" aria-label="Ilustración esquemática de la Tierra y la Luna; tamaños y distancia no están a escala"><div class="distance-line">384.400 km de media</div><div class="earth"></div><div class="mini-moon"></div></div><div class="fact-grid"><div class="panel fact"><b>3.474 km</b><span>de diámetro aproximado</span></div><div class="panel fact"><b>27,3 días</b><span>para dar una vuelta a la Tierra</span></div><div class="panel fact"><b>1/6</b><span>de la gravedad terrestre</span></div><div class="panel fact"><b>29,5 días</b><span>de una luna nueva a la siguiente</span></div></div></div><p class="note">La distancia es una media: la Luna a veces está algo más cerca y otras, más lejos. Los 27,3 días son su vuelta alrededor de la Tierra; las fases se repiten cada 29,5 días porque la Tierra también se mueve alrededor del Sol. La gravedad lunar es la causa principal de las mareas.</p></section>
+    <section id="fases" class="section wrap"><div class="section-heading"><div class="eyebrow">03 / La luz del Sol</div><h2>¿Por qué cambia de forma?</h2><p>La Luna siempre es redonda y el Sol ilumina una mitad. Al moverse alrededor de la Tierra, vemos distintas partes de esa mitad iluminada. Las fases no son la sombra de la Tierra.</p></div><div class="phase-layout"><div class="panel phase-stage" aria-live="polite"><div id="phase-symbol" class="phase-symbol" aria-hidden="true">🌑</div><h3 id="phase-title">Luna nueva</h3><p id="phase-description">La cara que mira hacia la Tierra queda prácticamente a oscuras y casi no podemos verla.</p></div><div><div class="phase-controls" aria-label="Selecciona una fase lunar"><button class="phase-btn" type="button" data-phase="0" aria-pressed="true"><span aria-hidden="true">🌑</span>Luna nueva</button><button class="phase-btn" type="button" data-phase="1" aria-pressed="false"><span aria-hidden="true">🌓</span>Cuarto creciente</button><button class="phase-btn" type="button" data-phase="2" aria-pressed="false"><span aria-hidden="true">🌕</span>Luna llena</button><button class="phase-btn" type="button" data-phase="3" aria-pressed="false"><span aria-hidden="true">🌗</span>Cuarto menguante</button></div><p class="phase-explain">Pulsa cada fase para descubrirla. Entre estas cuatro fases principales también hay formas intermedias.</p></div></div></section>
+    <section id="curiosidades" class="section wrap"><div class="section-heading"><div class="eyebrow">04 / Archivo secreto</div><h2>¿Sabías que…?</h2><p>Toca las tarjetas para descubrir seis pistas lunares.</p></div><div class="curiosity-grid"><button class="flip" type="button" aria-expanded="false" data-answer="La Luna tarda aproximadamente lo mismo en girar sobre sí misma que en rodear la Tierra. Por eso vemos casi siempre la misma cara. La otra cara también recibe luz del Sol."><span class="glyph" aria-hidden="true">🔄</span><strong>¿Vemos siempre la misma cara?</strong><span class="reveal">Toca para descubrir →</span></button><button class="flip" type="button" aria-expanded="false" data-answer="Como casi no hay viento ni lluvia, las huellas de los astronautas pueden durar muchísimo tiempo."><span class="glyph" aria-hidden="true">👣</span><strong>¿Qué pasa con las huellas?</strong><span class="reveal">Toca para descubrir →</span></button><button class="flip" type="button" aria-expanded="false" data-answer="Sí. Hay hielo de agua en cráteres cercanos a los polos que permanecen siempre en sombra."><span class="glyph" aria-hidden="true">💧</span><strong>¿Existe agua en la Luna?</strong><span class="reveal">Toca para descubrir →</span></button><button class="flip" type="button" aria-expanded="false" data-answer="Su gravedad es unas seis veces menor que la terrestre. Allí saltarías más alto, pero tu masa seguiría siendo la misma."><span class="glyph" aria-hidden="true">🪶</span><strong>¿Allí pesaríamos menos?</strong><span class="reveal">Toca para descubrir →</span></button><button class="flip" type="button" aria-expanded="false" data-answer="Sí. Como no tiene una atmósfera como la nuestra, el cielo se ve negro incluso cuando el Sol ilumina el suelo."><span class="glyph" aria-hidden="true">🌌</span><strong>¿El cielo es negro de día?</strong><span class="reveal">Toca para descubrir →</span></button><button class="flip" type="button" aria-expanded="false" data-answer="Los cráteres se formaron sobre todo por impactos de rocas espaciales. Allí quedan visibles durante mucho tiempo."><span class="glyph" aria-hidden="true">☄️</span><strong>¿De dónde vienen los cráteres?</strong><span class="reveal">Toca para descubrir →</span></button></div></section>
+    <section id="mas-secretos" class="section wrap"><div class="section-heading"><div class="eyebrow">05 / Para seguir explorando</div><h2>Tres secretos más</h2><p>Hay detalles de la Luna que parecen de ciencia ficción, pero son reales.</p></div><div class="discovery-grid"><article class="panel discovery"><div class="glyph" aria-hidden="true">🌊</div><h3>Los «mares» no tienen agua</h3><p>Las manchas oscuras que vemos son grandes llanuras de lava antigua que se enfrió. Recibieron el nombre de mares antes de saber qué eran.</p></article><article class="panel discovery"><div class="glyph" aria-hidden="true">🌡️</div><h3>Calor y frío extremos</h3><p>La superficie puede llegar a unos 127 °C bajo el Sol y bajar hasta unos −173 °C en la oscuridad. Su atmósfera es demasiado tenue para que podamos respirar.</p></article><article class="panel discovery"><div class="glyph" aria-hidden="true">🌘</div><h3>No hay eclipse cada mes</h3><p>La órbita lunar está inclinada. Por eso, durante la mayoría de las lunas nuevas y llenas, el Sol, la Tierra y la Luna no quedan alineados para formar un eclipse.</p></article></div></section>
+    <section id="calculadora" class="section wrap"><div class="section-heading"><div class="eyebrow">06 / Experimento</div><h2>¿Cuánto pesarías en la Luna?</h2><p>Introduce una masa y compara cómo se sentiría su peso bajo la gravedad lunar.</p></div><div class="panel calculator"><div><h3>Prueba con tu mochila… ¡o contigo!</h3><label for="mass">Masa en la Tierra (kg)</label><input id="mass" type="number" min="0" max="100000" step="0.1" inputmode="decimal" value="30"><p class="note">La masa se mide en kg y no cambia. Lo que cambia es la fuerza con la que la Luna te atrae.</p></div><div class="result" aria-live="polite"><span>En la Luna se sentiría como</span><strong id="moon-result">5 kg</strong><small>de peso en la Tierra, aproximadamente. Tu masa no cambia.</small></div></div></section>
+    <section id="apolo" class="section wrap"><div class="section-heading"><div class="eyebrow">07 / Un gran viaje</div><h2>1969: llegamos a la Luna</h2><p>Neil Armstrong y Buzz Aldrin caminaron por la Luna en la misión Apolo 11. Michael Collins permaneció en órbita lunar.</p></div><div class="timeline"><div class="panel event"><b>16 julio</b><h3>Despegue 🚀</h3><p>Los tres astronautas salieron de la Tierra.</p></div><div class="panel event"><b>20 julio</b><h3>Alunizaje 🌙</h3><p>El módulo Eagle aterrizó en la Luna. Armstrong y Aldrin exploraron su superficie.</p></div><div class="panel event"><b>24 julio</b><h3>Regreso 🌍</h3><p>La tripulación volvió sana y salva a la Tierra.</p></div></div><p class="note">El primer paso fue el 20 de julio en horario de Estados Unidos y el 21 de julio en horario universal (UTC).</p></section>
+    <section id="quiz" class="section wrap"><div class="section-heading"><div class="eyebrow">08 / Reto final</div><h2>¿Serías un buen astronauta?</h2><p>Responde cinco preguntas y descubre tu puntuación.</p></div><div class="panel quiz-box" id="quiz-box" aria-live="polite"><div class="progress" id="quiz-progress">Pregunta 1 de 5</div><h3 id="quiz-question"></h3><div class="answers" id="quiz-answers"></div><p class="feedback" id="quiz-feedback"></p><button class="btn quiz-next" id="quiz-next" type="button" hidden>Siguiente pregunta →</button></div></section>
+
+  <footer id="fuentes" class="footer"><div class="end-title"><div class="eyebrow">Misión completada</div><h2>¡Hasta la próxima Luna!</h2><p>Sigue mirando el cielo: cada noche puedes descubrir algo nuevo.</p></div><div class="wrap"><div class="footer-identity"><img class="footer-logo" src="logo-colegio.png" alt="Colegio Compañía de María · Almería" width="708" height="115"><div class="footer-title"><strong>MISIÓN LUNA</strong><span>Antonio De Oña Vidao · 5.º A</span></div></div><div class="footer-sources">Fuentes: <a href="https://science.nasa.gov/moon/facts/" target="_blank" rel="noopener noreferrer">Datos de la Luna · NASA</a><a href="https://science.nasa.gov/moon/moon-phases/" target="_blank" rel="noopener noreferrer">Fases · NASA</a><a href="https://science.nasa.gov/moon/tides/" target="_blank" rel="noopener noreferrer">Mareas · NASA</a><a href="https://science.nasa.gov/moon/eclipses/" target="_blank" rel="noopener noreferrer">Eclipses · NASA</a><a href="https://www.nasa.gov/mission/apollo-11/" target="_blank" rel="noopener noreferrer">Apolo 11 · NASA</a></div></div></footer>
+  </main>
+  <nav class="presentation-controls" aria-label="Controles de la presentación"><button id="slide-prev" class="slide-control" type="button" aria-label="Sección anterior">← Anterior</button><div class="slide-progress"><span id="slide-count" class="slide-count" aria-live="polite">01 / 10 · Portada</span><div id="slide-dots" class="slide-dots" aria-label="Ir a una sección"></div></div><button id="slide-next" class="slide-control" type="button" aria-label="Sección siguiente">Siguiente →</button></nav>
+  <script>
+    const phases=[
+      {symbol:'🌑',title:'Luna nueva',description:'La cara que mira hacia la Tierra queda prácticamente a oscuras y casi no podemos verla.'},
+      {symbol:'🌓',title:'Cuarto creciente',description:'Vemos iluminada aproximadamente la mitad de la cara visible. La zona luminosa va aumentando.'},
+      {symbol:'🌕',title:'Luna llena',description:'La cara visible aparece iluminada por completo desde la Tierra.'},
+      {symbol:'🌗',title:'Cuarto menguante',description:'Volvemos a ver media cara iluminada, pero la zona luminosa va disminuyendo.'}
+    ];
+    document.querySelectorAll('.phase-btn').forEach(button=>button.addEventListener('click',()=>{
+      const phase=phases[Number(button.dataset.phase)];
+      document.querySelectorAll('.phase-btn').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+      document.getElementById('phase-symbol').textContent=phase.symbol;
+      document.getElementById('phase-title').textContent=phase.title;
+      document.getElementById('phase-description').textContent=phase.description;
+    }));
+    document.querySelectorAll('.flip').forEach(button=>{
+      const question=button.querySelector('strong').textContent;
+      button.addEventListener('click',()=>{
+        const open=button.dataset.open!=='true';
+        button.dataset.open=String(open);
+        button.setAttribute('aria-expanded',String(open));
+        button.querySelector('strong').textContent=open?button.dataset.answer:question;
+        button.querySelector('.reveal').textContent=open?'Toca para cerrar ↑':'Toca para descubrir →';
+      });
+    });
+    const mass=document.getElementById('mass'),moonResult=document.getElementById('moon-result');
+    function updateWeight(){const value=Number(mass.value);moonResult.textContent=mass.value!==''&&Number.isFinite(value)&&value>=0?new Intl.NumberFormat('es-ES',{maximumFractionDigits:1}).format(value/6)+' kg':'—';}
+    mass.addEventListener('input',updateWeight);
+    const questions=[
+      {q:'¿La Luna produce su propia luz?',options:['Sí, como una estrella','No, refleja la luz del Sol','Solo durante la luna llena'],correct:1,explain:'La Luna refleja la luz del Sol.'},
+      {q:'¿Cuál es la distancia media entre la Tierra y la Luna?',options:['384.400 km','3.474 km','27 km'],correct:0,explain:'La distancia media es de unos 384.400 km.'},
+      {q:'¿Qué vemos durante la luna llena?',options:['La Luna desaparece','La cara visible iluminada','Solo un cuarto de la Luna'],correct:1,explain:'En la luna llena vemos iluminada toda su cara visible.'},
+      {q:'¿Qué ocurre con tu masa al viajar a la Luna?',options:['Se divide entre seis','Desaparece','Sigue siendo la misma'],correct:2,explain:'La masa es la misma; cambia la fuerza peso por la gravedad.'},
+      {q:'¿Quién fue la primera persona que pisó la Luna?',options:['Michael Collins','Neil Armstrong','Galileo Galilei'],correct:1,explain:'Neil Armstrong dio el primer paso durante la misión Apolo 11.'}
+    ];
+    let current=0,score=0,answered=false,completed=false;
+    const progress=document.getElementById('quiz-progress'),questionEl=document.getElementById('quiz-question'),answersEl=document.getElementById('quiz-answers'),feedback=document.getElementById('quiz-feedback'),next=document.getElementById('quiz-next');
+    function renderQuestion(){answered=false;const item=questions[current];progress.textContent=`Pregunta ${current+1} de ${questions.length}`;questionEl.textContent=item.q;feedback.textContent='';answersEl.replaceChildren();next.hidden=true;item.options.forEach((option,index)=>{const button=document.createElement('button');button.type='button';button.className='answer';button.textContent=option;button.addEventListener('click',()=>choose(index));answersEl.append(button);});}
+    function choose(index){if(answered)return;answered=true;const item=questions[current];if(index===item.correct)score++;answersEl.querySelectorAll('button').forEach((button,i)=>{button.disabled=true;if(i===item.correct)button.classList.add('correct');else if(i===index)button.classList.add('incorrect');});feedback.textContent=(index===item.correct?'¡Correcto! ':'Casi. ')+item.explain;next.textContent=current===questions.length-1?'Ver mi resultado →':'Siguiente pregunta →';next.hidden=false;}
+    next.addEventListener('click',()=>{if(completed){score=0;current=0;completed=false;renderQuestion();return;}if(current<questions.length-1){current++;renderQuestion();return;}completed=true;progress.textContent='Misión completada';questionEl.textContent=`Has acertado ${score} de ${questions.length}`;answersEl.replaceChildren();feedback.textContent=score===questions.length?'¡Enhorabuena! Estás preparado para viajar a la Luna. 🚀🌙':score>=3?'¡Buen trabajo! Ya sabes mucho sobre la Luna. 🌙':'¡Sigue explorando! Vuelve a leer las pistas y prueba otra vez. ✨';next.textContent='Repetir el reto ↻';next.hidden=false;});
+    renderQuestion();
+
+    const slides=[...document.querySelectorAll('.deck > section, .deck > footer')];
+    const slideNames=['Portada','Despegue','Datos','Fases','Curiosidades','Más secretos','Gravedad','Apolo 11','Reto final','Fuentes'];
+    const slidePrev=document.getElementById('slide-prev');
+    const slideNext=document.getElementById('slide-next');
+    const slideCount=document.getElementById('slide-count');
+    const slideDots=document.getElementById('slide-dots');
+    let activeSlide=-1;
+    let wheelLocked=false;
+    let touchStart=null;
+
+    slides.forEach((slide,index)=>{
+      const dot=document.createElement('button');
+      dot.type='button';
+      dot.className='slide-dot';
+      dot.setAttribute('aria-label',`Ir a ${slideNames[index]}`);
+      dot.addEventListener('click',()=>showSlide(index));
+      slideDots.append(dot);
+    });
+
+    function showSlide(index,{updateUrl=true,focus=true}={}){
+      const target=Math.max(0,Math.min(slides.length-1,index));
+      if(target===activeSlide&&slides[target].classList.contains('active'))return;
+      activeSlide=target;
+      slides.forEach((slide,i)=>{
+        const selected=i===target;
+        slide.classList.toggle('active',selected);
+        slide.inert=!selected;
+        slide.setAttribute('aria-hidden',String(!selected));
+        if(selected)slide.scrollTop=0;
+      });
+      [...slideDots.children].forEach((dot,i)=>{
+        if(i===target)dot.setAttribute('aria-current','step');
+        else dot.removeAttribute('aria-current');
+      });
+      slideCount.textContent=`${String(target+1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')} · ${slideNames[target]}`;
+      slidePrev.disabled=target===0;
+      slideNext.disabled=target===slides.length-1;
+      if(updateUrl)history.pushState({slide:target},'',`#${slides[target].id}`);
+      if(focus){
+        const heading=slides[target].querySelector('h1,h2');
+        if(heading){heading.tabIndex=-1;heading.focus({preventScroll:true});}
+      }
+    }
+    const initialIndex=Math.max(0,slides.findIndex(slide=>`#${slide.id}`===location.hash));
+    showSlide(initialIndex,{updateUrl:false,focus:false});
+    slidePrev.addEventListener('click',()=>showSlide(activeSlide-1));
+    slideNext.addEventListener('click',()=>showSlide(activeSlide+1));
+    document.querySelectorAll('a[href^="#"]').forEach(link=>link.addEventListener('click',event=>{
+      const index=slides.findIndex(slide=>`#${slide.id}`===link.getAttribute('href'));
+      if(index<0)return;
+      event.preventDefault();
+      showSlide(index);
+    }));
+    function showHash(){
+      const index=slides.findIndex(slide=>`#${slide.id}`===location.hash);
+      if(index>=0)showSlide(index,{updateUrl:false,focus:false});
+    }
+    window.addEventListener('hashchange',showHash);
+    window.addEventListener('popstate',showHash);
+    window.addEventListener('keydown',event=>{
+      if(event.altKey||event.ctrlKey||event.metaKey)return;
+      const tag=document.activeElement?.tagName;
+      if(['INPUT','TEXTAREA','SELECT','BUTTON','A'].includes(tag)||document.activeElement?.isContentEditable)return;
+      if(['ArrowRight','PageDown',' '].includes(event.key)){event.preventDefault();showSlide(activeSlide+1);}
+      else if(['ArrowLeft','PageUp'].includes(event.key)){event.preventDefault();showSlide(activeSlide-1);}
+      else if(event.key==='Home'){event.preventDefault();showSlide(0);}
+      else if(event.key==='End'){event.preventDefault();showSlide(slides.length-1);}
+    });
+    window.addEventListener('wheel',event=>{
+      if(Math.abs(event.deltaY)<12||Math.abs(event.deltaX)>Math.abs(event.deltaY))return;
+      const slide=slides[activeSlide];
+      const direction=Math.sign(event.deltaY);
+      const canScroll=slide.scrollHeight>slide.clientHeight+2;
+      const atTop=slide.scrollTop<=2;
+      const atBottom=slide.scrollTop+slide.clientHeight>=slide.scrollHeight-2;
+      if(canScroll&&((direction>0&&!atBottom)||(direction<0&&!atTop)))return;
+      event.preventDefault();
+      if(wheelLocked)return;
+      showSlide(activeSlide+direction);
+      wheelLocked=true;
+      window.setTimeout(()=>{wheelLocked=false;},550);
+    },{passive:false});
+    document.addEventListener('touchstart',event=>{
+      const touch=event.touches[0];
+      touchStart={x:touch.clientX,y:touch.clientY};
+    },{passive:true});
+    document.addEventListener('touchend',event=>{
+      if(!touchStart)return;
+      const touch=event.changedTouches[0];
+      const dx=touch.clientX-touchStart.x;
+      const dy=touch.clientY-touchStart.y;
+      if(Math.abs(dx)>65&&Math.abs(dx)>Math.abs(dy)*1.3)showSlide(activeSlide+(dx<0?1:-1));
+      touchStart=null;
+    },{passive:true});
+  </script>
+</body>
+</html>
